@@ -7,8 +7,11 @@
 ## Objectives of the project:-
 
 1.To define the requirements, design and testplan of the project.
+
 2.To work on implementing and building a multifunctional clock app.
+
 3.To follow clean code practices and code quality.
+
 4.To make use of different tools for testing and documentation.
 
 ## Research
