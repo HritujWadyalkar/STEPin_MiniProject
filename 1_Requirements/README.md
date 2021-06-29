@@ -16,8 +16,8 @@ Reaching your office/school on time, Not being late for the movies, Waking up on
 ## Cost and Features:-
 
 The clock app provides multiple features such as Live digital clock, Event reminder and a countdown timer. The user can choose any menu options and the feature will be displayed.
-|Features           | Properties     |
-|----------------   | -------------- | 
+|Features | Properties |
+|---------------- | -------------- |
 |Live digital clock | It displays the current time of your region. |
 |Event reminder | It allows you to set any event reminders. |
 |Countdown timer | It allows your to set a countdown of specific time you need.|
