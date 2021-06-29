@@ -23,3 +23,5 @@ The clock app provides multiple features such as Live digital clock, Event remin
 |Countdown timer | It allows your to set a countdown of specific time you need.|
 
 ## Defining our system:-
+
+<img src="/1_Requirements/systemdesign.png" alt="Defining our system"/>
