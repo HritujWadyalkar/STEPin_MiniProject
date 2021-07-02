@@ -27,3 +27,5 @@ The clock app provides multiple features such as Live digital clock, Event remin
 <img src="/1_Requirements/systemdesign.jpg" alt="Defining our system"/>
 
 ## SWOT Analysis
+
+<img src="/1_Requirements/swotanalysis.jpg" alt="Swot Analysis"/>
