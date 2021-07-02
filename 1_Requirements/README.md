@@ -51,3 +51,25 @@ The clock app provides multiple features such as Live digital clock, Event remin
 ### How:-
 
 - Users can select their desired feature such as digital clock, reminder or a timer. The desired feature will be displayed in the menu. Multiple features inside a single app helps people to easily access it rather than having multiple apps for different features.
+
+## Detail requirements
+
+### High Level Requirements:-
+
+| ID   | Description | Category | Status |
+| ---- | ----------- | -------- | ------ |
+| HR01 |             |          |        |
+| HR02 |             |          |        |
+| HR03 |             |          |        |
+| HR04 |             |          |        |
+| HR05 |             |          |        |
+
+### Low level Requirements:-
+
+| ID   | Description | HLR ID | Status (Implemented/Future) |
+| ---- | ----------- | ------ | --------------------------- |
+| LR01 |             |        |                             |
+| LR02 |             |        |                             |
+| LR03 |             |        |                             |
+| LR04 |             |        |                             |
+| LR05 |             |        |                             |
