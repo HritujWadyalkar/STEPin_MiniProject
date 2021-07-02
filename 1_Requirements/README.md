@@ -28,4 +28,4 @@ The clock app provides multiple features such as Live digital clock, Event remin
 
 ## SWOT Analysis
 
-<img src="/1_Requirements/swotanalysis.jpg" alt="Swot Analysis"/>
+<img src="/1_Requirements/swotanalysis.png" alt="Swot Analysis"/>
