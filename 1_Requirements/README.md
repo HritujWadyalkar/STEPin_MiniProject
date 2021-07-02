@@ -11,7 +11,7 @@ Reaching your office/school on time, Not being late for the movies, Waking up on
 - To follow clean code practices and code quality.
 - To make use of different tools for testing and documentation.
 
-## Research
+# Research
 
 ## Cost and Features:-
 
@@ -22,32 +22,32 @@ The clock app provides multiple features such as Live digital clock, Event remin
 |Event reminder | It allows you to set any event reminders. |
 |Countdown timer | It allows your to set a countdown of specific time you need.|
 
-## Defining our system:-
+# Defining our system
 
 ![Defining our system](/1_Requirements/systemdesign.png)
 
-## SWOT Analysis
+# SWOT Analysis
 
 ![Swot Analysis](/1_Requirements/swotanalysis.png)
 
-## 4W&#39;s and 1&#39;H
+# 4W&#39;s and 1&#39;H
 
-### Who:-
+## Who:-
 
 - Users of any age group can use this.
 
-### What:-
+## What:-
 
 - Some clocks only provide limited features like current time. This project deals with integrating a lot more features along with displaying the current time of the location.
 
-### When:-
+## When:-
 
 - People nowadays prefer multifeature apps rather than one app providing to a specific task. This project aims to tackle that issue
 
-### Where:-
+## Where:-
 
 - This problem is faced all over the world.
 
-### How:-
+## How:-
 
 - Users can select their desired feature such as digital clock, reminder or a timer. The desired feature will be displayed in the menu. Multiple features inside a single app helps people to easily access it rather than having multiple apps for different features.
