@@ -9,3 +9,5 @@
 ### Usecase Design:-
 
 ![Usecase Design](/2_Design/usecasediagram.png)
+
+## Low Level Design
