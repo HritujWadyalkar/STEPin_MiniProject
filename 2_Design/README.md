@@ -8,4 +8,4 @@
 
 ### Usecase Design:-
 
-![Usecase Design](/2_Design/usecasedesign.png)
+![Usecase Design](/2_Design/usecasediagram.png)
