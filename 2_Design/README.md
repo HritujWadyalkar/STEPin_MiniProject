@@ -1,13 +1,13 @@
 # DESIGN
 
-## High Level Design
+## Behavioural Diagrams
 
-### Architecture Design:-
+### Activity Diagram:-
 
-![Architecture Design](/2_Design/architecturedesign.png)
+![Activity Diagram](/2_Design/activitydiagram.png)
 
-### Usecase Design:-
+### Usecase Diagram:-
 
-![Usecase Design](/2_Design/usecasediagram.png)
+![Usecase Diagram](/2_Design/usecasediagram.png)
 
-## Low Level Design
+## Structural Diagrams
