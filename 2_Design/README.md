@@ -2,6 +2,10 @@
 
 ## High Level Design
 
-### Arcitecture Design:-
+### Architecture Design:-
 
 ![Architecture Design](/2_Design/architecturedesign.png)
+
+### Usecase Design:-
+
+![Usecase Design](/2_Design/usecasedesign.png)
