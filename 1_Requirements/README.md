@@ -63,7 +63,7 @@ The clock app provides multiple features such as Live digital clock, Event remin
 | HR03 | System displays the digital clock            | Technical         |  TBD      |
 | HR04 | System displays the event reminder            | Technical         |    TBD    |
 | HR05 | System displays the countdown timer            | Technical         |    TBD    |
-| HR06 | User can exit the current feature and go back to menu           | Technical         |   TBD     |
+| HR06 | User can exit the current feature and menu screen           | Technical         |   TBD     |
 | HR07 | User can select a date from calendar            | Technical         |   TBD     |
 | HR08 | User can enter the event on a date            | Technical          |   TBD     |
 | HR09 | User can remove the event from a date            | Technical         |   TBD     |
@@ -87,4 +87,4 @@ The clock app provides multiple features such as Live digital clock, Event remin
 | LR08 | If the user chooses to set the time, the user has to specify the desired time and the countdown starts            |  HR11      |                             |
 | LR09 | The user can reset the time by clicking a key on the keyboard             |   HR12     |                             |
 | LR10 | The data from reminder can be stored into a file while closing the system |    HR13          |                          |
-| LR11 | The user can exit the current feature and go back to the menu screen | HR06 |      |
+| LR11 | The user can exit the current feature and go back to the menu screen or exit the menu screen | HR06 |      |
