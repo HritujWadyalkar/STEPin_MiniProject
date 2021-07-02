@@ -24,8 +24,30 @@ The clock app provides multiple features such as Live digital clock, Event remin
 
 ## Defining our system:-
 
-<img src="/1_Requirements/systemdesign.jpg" alt="Defining our system"/>
+![Defining our system](/1_Requirements/systemdesign.png)
 
 ## SWOT Analysis
 
-<img src="/1_Requirements/swotanalysis.png" alt="Swot Analysis"/>
+![Swot Analysis](/1_Requirements/swotanalysis.png)
+
+## 4W&#39;s and 1&#39;H
+
+### Who:-
+
+- Users of any age group can use this.
+
+### What:-
+
+- Some clocks only provide limited features like current time. This project deals with integrating a lot more features along with displaying the current time of the location.
+
+### When:-
+
+- People nowadays prefer multifeature apps rather than one app providing to a specific task. This project aims to tackle that issue
+
+### Where:-
+
+- This problem is faced all over the world.
+
+### How:-
+
+- Users can select their desired feature such as digital clock, reminder or a timer. The desired feature will be displayed in the menu. Multiple features inside a single app helps people to easily access it rather than having multiple apps for different features.
