@@ -1,6 +1,6 @@
-# DESIGN
+# Technical Design
 
-## Behavioural Diagrams
+## High-Level Design
 
 ### Activity Diagram:-
 
@@ -10,4 +10,4 @@
 
 ![Usecase Diagram](/2_Design/usecasediagram.png)
 
-## Structural Diagrams
+## Low-Level Design
