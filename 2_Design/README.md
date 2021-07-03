@@ -11,3 +11,8 @@
 ![Usecase Diagram](/2_Design/usecasediagram.png)
 
 ## Low-Level Design
+
+### State Diagram:-
+
+![State Diagram](/2_Design/statediagram.png)
+
