@@ -14,5 +14,6 @@
 
 ### State Diagram:-
 
+![State Diagram](/2_Design/statediagram.png)
 
 
