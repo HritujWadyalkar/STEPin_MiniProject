@@ -4,7 +4,7 @@
 
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual O/P** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  HR01     | To test the function which displays digital clock                   | |  |  | |
+|  HR01     | To test the function which displays digital clock                   |Digital Clock Function | SUCCESS | SUCCESS | Technical |
 |  HR02      |  To test the function which displays event reminder                      | | || |
 |  HR03   | To test the function which displays countdown timer| | || |
 
