@@ -15,7 +15,7 @@
 | **Test ID** |  **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual O/P** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------------|------------|-------------|----------------|------------------|
 |   LR01   |To test the choice provided in menu screen| | | ||
-|     LR02       |  To test if the output provided in the digital clock is correct        | struct current_time  | PASS | PASS | Technical |
+|     LR02       |  To test if the output provided in the digital clock is correct        | time_t s, struct current_time | PASS | PASS | Technical |
 | LR03   | To test if the choice provided in the event reminder menu works  |  | |||
 |  LR04    | To test if the event is added into the program  | | | ||
 |   LR05   |To test the event information provided is valid| | | ||
