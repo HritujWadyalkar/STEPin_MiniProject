@@ -4,7 +4,7 @@
 
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual O/P** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  HR01     | To test the function which displays digital clock                   |Digital Clock Function (digitalClock()) | SUCCESS | SUCCESS | Technical |
+|  HR01     | To test the function which displays digital clock                   |int cooldown, struct current_time | SUCCESS | SUCCESS | Technical |
 |  HR02      |  To test the function which displays event reminder                      | | || |
 |  HR03   | To test the function which displays countdown timer| | || |
 
