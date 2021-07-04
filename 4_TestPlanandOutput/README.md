@@ -7,7 +7,7 @@
 |  HR01     | To test the function which displays digital clock                   | |  |  | |
 |  HR02      |  To test the function which displays event reminder                      | | || |
 |  HR03   | To test the function which displays countdown timer| | || |
-| HR04 |  | | | |  |
+
 
 
 ## Low level test plan
