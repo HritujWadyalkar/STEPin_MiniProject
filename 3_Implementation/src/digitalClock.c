@@ -1,17 +1,19 @@
+/*Commenting and Documentation yet to be done*/
+
 #include "prototypes.h"
 #include <time.h>
 
 error_t digitalClock()
 {
-    time_t s;
+    time_t seconds;
     struct tm *current_time;
 
     // time in seconds
-    s = time(NULL);
+    seconds = time(NULL);
 
     // to get current time
-    current_time = localtime(&s);
-    if (current_time == NULL || current_time != localtime(&s))
+    current_time = localtime(&seconds);
+    if (current_time == NULL || current_time != localtime(&seconds))
         return TIMEERROR;
     printf("\n");
     int cooldown = 10;
