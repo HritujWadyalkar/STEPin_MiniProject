@@ -13,8 +13,6 @@ error_t digitalClock()
 
     // to get current time
     current_time = localtime(&s);
-    if (current_time != localtime(&s))
-        return TIMEERROR;
     printf("\n");
     int cooldown = 10;
     while (cooldown--)
