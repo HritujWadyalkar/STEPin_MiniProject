@@ -19,6 +19,3 @@
 ### Class Diagram:-
 
 ![Class Diagram](/2_Design/classdiagram.png)
-
-
-
