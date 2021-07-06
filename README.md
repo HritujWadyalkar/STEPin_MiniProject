@@ -14,6 +14,13 @@ Folder                      | Description
 4_TestPlanandOutput         | Documents with test plans and procedures
 
 ## Contributors List and Summary
-| SF_ID | Name | Features | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
-|-----|-----|-----|-----|-----|-----|-----|
+| SF_ID | Name | Features |Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
+|-----|-----|----|------|-----|-----|-----|
 | 303612 | Athul Thomas |  |  |  |  | 
+
+## Challenges Faced 
+| Challenge Faced | Solution |
+|-----------------|--------------------|
+| Overwriting printf on same line (digital clock and countdown timer) | Used \r (carriage return) instead of \n (new line) |
+| Countdown timer structure errors | Declaraing typedef structure in custom header file |
+| Structure pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
