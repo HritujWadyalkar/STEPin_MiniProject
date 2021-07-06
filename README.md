@@ -23,4 +23,4 @@ Folder                      | Description
 |-----------------|--------------------|
 | Overwriting printf on same line (digital clock and countdown timer) | Used \r (carriage return) instead of \n (new line) |
 | Countdown timer structure errors | Declaraing typedef structure in custom header file |
-| Strucutre pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
+| Structure pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
