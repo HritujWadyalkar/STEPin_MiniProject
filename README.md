@@ -17,3 +17,11 @@ Folder                      | Description
 | SF_ID | Name | Features | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
 |-----|-----|-----|-----|-----|-----|-----|
 | 303612 | Athul Thomas |  |  |  |  | 
+
+## Challenges Faced 
+| Challenge Faced | Solution |
+|-----------------|--------------------|
+| Overwriting printf on same line (digital clock and countdown timer) | Used \r (carriage return) instead of \n (new line) |
+| Unity test errors | Had to include unity.c and unity.h files | 
+| Countdown timer structure errors | Declaraing typedef structure in custom header file |
+| Strucutre pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
