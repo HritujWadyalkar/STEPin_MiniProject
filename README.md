@@ -22,6 +22,5 @@ Folder                      | Description
 | Challenge Faced | Solution |
 |-----------------|--------------------|
 | Overwriting printf on same line (digital clock and countdown timer) | Used \r (carriage return) instead of \n (new line) |
-| Unity test errors | Had to include unity.c and unity.h files | 
 | Countdown timer structure errors | Declaraing typedef structure in custom header file |
 | Strucutre pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
