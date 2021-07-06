@@ -14,9 +14,9 @@ Folder                      | Description
 4_TestPlanandOutput         | Documents with test plans and procedures
 
 ## Contributors List and Summary
-| SF_ID | Name | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
-|-----|-----|-------|-----|-----|-----|
-| 303612 | Athul Thomas |   |  |  | 
+| SF_ID | Name | Features |Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
+|-----|-----|----|------|-----|-----|-----|
+| 303612 | Athul Thomas |  |  |  |  | 
 
 ## Challenges Faced 
 | Challenge Faced | Solution |
