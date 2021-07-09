@@ -20,6 +20,11 @@ Folder                      | Description
 |-----|-----|----|------|-----|-----|-----|
 | 303612 | Athul Thomas |  |  |  |  | 
 
+|Features list|  Feature ID|
+|-------------|----------|
+|Digital Clock|  F_01|
+|Event Scheduler| F_02|
+|Countdown Timer| F_03|
 ## Challenges Faced 
 | Challenge Faced | Solution |
 |-----------------|--------------------|
