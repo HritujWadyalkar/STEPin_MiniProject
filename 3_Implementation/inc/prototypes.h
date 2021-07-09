@@ -16,7 +16,8 @@ typedef enum error_t
     NULL_ERROR,
     NUMBER_FORMAT_ERROR,
     OUTOFBOUND_ERROR,
-    FATAL_ERROR
+    FATAL_ERROR,
+    FILE_NOT_FOUND
 } error_t;
 
 typedef struct timer

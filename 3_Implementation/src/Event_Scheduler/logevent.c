@@ -19,8 +19,7 @@ error_t logevent(event *e, int *numberoftasks)
     filepointer = fopen("log.txt", "w");
     if (filepointer == NULL)
     {
-        printf("Error! File not found");
-        exit(1);
+        return FILE_NOT_FOUND;
     }
     for (parser = 0; parser < *numberoftasks; parser++)
     {
