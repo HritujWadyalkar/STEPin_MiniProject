@@ -52,10 +52,10 @@ revisit:
         event *e;
         int currentDay, currentmonth, currentyear;
         getcurrentdate(&currentDay, &currentmonth, &currentyear);
-        e = (event *)malloc(20 * sizeof(event));
         int i, numberoftasks;
         printf("\nEnter number of tasks: ");
         scanf("%d", &numberoftasks);
+        e = (event *)malloc(numberoftasks * sizeof(event));
         char buffer;
         for (i = 0; i < numberoftasks; i++)
         {

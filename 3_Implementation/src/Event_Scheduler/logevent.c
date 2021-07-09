@@ -12,6 +12,8 @@
 #include "prototypes.h"
 error_t logevent(event *e, int *numberoftasks)
 {
+    if (NULL == e || NULL == numberoftasks)
+        return NULL_ERROR;
     int parser;
     FILE *filepointer;
     filepointer = fopen("log.txt", "w");

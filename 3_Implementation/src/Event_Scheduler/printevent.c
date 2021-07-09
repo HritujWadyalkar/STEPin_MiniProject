@@ -12,16 +12,18 @@
 #include "prototypes.h"
 error_t printevent(event *e, int *numberoftasks)
 {
+    if (NULL == e || NULL == numberoftasks)
+        return NULL_ERROR;
     int parser;
     for (parser = 0; parser < *numberoftasks; parser++)
     {
         if (e[parser].dayleft > 0)
         {
-            printf("Event: %s \t(Deadline= %d days)\n", e[parser].message, e[parser].dayleft);
+            printf("\nEvent: %s \t(Deadline= %d days)\n", e[parser].message, e[parser].dayleft);
         }
         else
         {
-            printf("Event: %s \t(Event done)\n", e[parser].message);
+            printf("\nEvent: %s \t(Event done)\n", e[parser].message);
         }
     }
     logevent(e, numberoftasks);

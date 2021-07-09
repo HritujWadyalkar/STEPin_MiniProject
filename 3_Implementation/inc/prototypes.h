@@ -32,7 +32,7 @@ typedef struct event
     int month;
     int year;
     int dayleft;
-} event, temp2;
+} event, temp;
 
 error_t digitalClock();
 error_t countdownTimer(timer *);

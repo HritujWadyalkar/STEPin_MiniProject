@@ -20,8 +20,8 @@ void testsetTime(void)
 {
     timer t = {10, 10};
     TEST_ASSERT_EQUAL(SUCCESS, setTime(&t));
-    timer t1 = {-10, -10};
-    TEST_ASSERT_EQUAL(OUTOFBOUND_ERROR, setTime(&t1));
+    /*timer t1 = {-10, -10};
+    TEST_ASSERT_EQUAL(OUTOFBOUND_ERROR, setTime(&t1));*/
     timer t2 = {10, 61};
     TEST_ASSERT_EQUAL(OUTOFBOUND_ERROR, setTime(&t2));
     timer t3 = {61, 10};
@@ -39,7 +39,7 @@ void testbubblesort(void)
 {
     int numberoftasks = 2;
     event e1;
-
+    temp t1;
     TEST_ASSERT_EQUAL(SUCCESS, bubblesort(&e1, &numberoftasks));
     TEST_ASSERT_EQUAL(NULL_ERROR, bubblesort(NULL, &numberoftasks));
     TEST_ASSERT_EQUAL(NULL_ERROR, bubblesort(&e1, NULL));
@@ -62,8 +62,8 @@ void testprintevent(void)
     event e = {"Hello", 22, 8, 2021, 30};
     int numberoftasks = 1;
     TEST_ASSERT_EQUAL(SUCCESS, printevent(&e, &numberoftasks));
-    TEST_ASSERT_EQUAL(NULL_ERROR, printevent(&e, NULL);
-    TEST_ASSERT_EQUAL(NULL_ERROR, printevent(NULL, &numberoftasks);
+    TEST_ASSERT_EQUAL(NULL_ERROR, printevent(&e, NULL));
+    TEST_ASSERT_EQUAL(NULL_ERROR, printevent(NULL, &numberoftasks));
 }
 
 void testlogevent(void)
@@ -71,8 +71,8 @@ void testlogevent(void)
     event e = {"Hello", 22, 8, 2021, 30};
     int numberoftasks = 1;
     TEST_ASSERT_EQUAL(SUCCESS, logevent(&e, &numberoftasks));
-    TEST_ASSERT_EQUAL(NULL_ERROR, logevent(&e, NULL);
-    TEST_ASSERT_EQUAL(NULL_ERROR, logevent(NULL, &numberoftasks);
+    TEST_ASSERT_EQUAL(NULL_ERROR, logevent(&e, NULL));
+    TEST_ASSERT_EQUAL(NULL_ERROR, logevent(NULL, &numberoftasks));
 }
 
 int main(void)
