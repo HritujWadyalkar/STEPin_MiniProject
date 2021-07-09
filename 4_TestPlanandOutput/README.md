@@ -5,8 +5,8 @@
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual O/P** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
 |  HR01     | To test the function which displays digital clock                   |time_t s, struct current_time, int cooldown | SUCCESS | SUCCESS | Technical |
-|  HR02      |  To test the function which displays event reminder                      | | || |
-|  HR03   | To test the function which displays countdown timer| timer * t  | SUCCESS | SUCCESS| Technical |
+|  HR02      |  To test the function which displays event reminder                      | event e,int numberoftasks | SUCCESS | SUCCESS|Technical |
+|  HR03   | To test the function which displays countdown timer                   | timer * t  | SUCCESS | SUCCESS| Technical |
 
 
 
