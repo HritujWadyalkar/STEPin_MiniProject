@@ -4,18 +4,18 @@
 
 ### Activity Diagram:-
 
-![Activity Diagram](/2_Design/activitydiagram.png)
+![Activity Diagram]()
 
 ### Usecase Diagram:-
 
-![Usecase Diagram](/2_Design/usecasediagram.png)
+![Usecase Diagram]()
 
 ## Low-Level Design
 
 ### State Diagram:-
 
-![State Diagram](/2_Design/statediagram.png)
+![State Diagram]()
 
 ### Class Diagram:-
 
-![Class Diagram](/2_Design/classdiagram.png)
+![Class Diagram](/2_Design/)
