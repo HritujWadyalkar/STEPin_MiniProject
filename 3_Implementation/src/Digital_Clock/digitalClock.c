@@ -1,26 +1,15 @@
-/**
- * @file digitalClock.c
- * @author Athul Thomas (thomasathul@gmail.com)
- * @brief 
- * @version 0.1
- * @date 2021-07-07
- * 
- * @copyright Copyright (c) 2021
- * 
- */
-
 #include "prototypes.h"
-#include <time.h>
 
 error_t digitalClock()
 {
     time_t seconds;
     struct tm *current_time;
-    //time in seconds
+
+    // time in seconds
     seconds = time(NULL);
 
     // to get current time
-    current_time = localtime(&s);
+    current_time = localtime(&seconds);
     printf("\n");
     int cooldown = 10;
     while (cooldown--)

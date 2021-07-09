@@ -1,14 +1,3 @@
-/**
- * @file countdownTimer.c
- * @author Athul Thomas (thomasathul@gmail.com)
- * @brief 
- * @version 0.1
- * @date 2021-07-07
- * 
- * @copyright Copyright (c) 2021
- * 
- */
-
 #include "prototypes.h"
 
 error_t countdownTimer(timer *t)
@@ -36,7 +25,7 @@ error_t countdownTimer(timer *t)
         if (t->minute == -1)
         {
 
-            printf("\n\nTime's up\n");
+            printf("\n\n---------Time's up--------\n");
             break;
         }
 
