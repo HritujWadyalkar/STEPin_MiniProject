@@ -39,7 +39,6 @@ void testbubblesort(void)
 {
     int numberoftasks = 2;
     event e1;
-    temp t1;
     TEST_ASSERT_EQUAL(SUCCESS, bubblesort(&e1, &numberoftasks));
     TEST_ASSERT_EQUAL(NULL_ERROR, bubblesort(NULL, &numberoftasks));
     TEST_ASSERT_EQUAL(NULL_ERROR, bubblesort(&e1, NULL));
