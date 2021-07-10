@@ -35,4 +35,5 @@ Folder                      | Description
 | Overwriting printf on same line (digital clock and countdown timer) | Used \r (carriage return) instead of \n (new line) |
 | Countdown timer structure errors | Declaraing typedef structure in custom header file |
 | Structure pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
-| Stack smashing detected  | Empty value for structure variable in test function file  (bubble sort)                            |
+| Stack smashing detected  | Empty value for structure variable in test function file  (bubble sort)                     |
+| Aborted (core dumped) in workflow |                                                     |
