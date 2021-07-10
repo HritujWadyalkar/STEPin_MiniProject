@@ -18,4 +18,4 @@ jobs:
     - name: make test
       run: make -C 3_Implementation/ test
     - name: Valgrind
-      run: make -C 3_Implementation/ valgrind
+      run: make -C 3_Implementation/ memoryleak
