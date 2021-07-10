@@ -56,14 +56,16 @@ $(PROJECT_NAME):all
 
 #Run make call to invoke cppcheck and compliation
 all: $(BUILD)
-	$(CPPCHECK)
 	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC)) -fno-stack-protector
 	
 #Run the target to find the memory leak in the program	
 memoryleak:
 	$(VALGRIND)
 
-
+#Run the target to find static code analysis in the program
+static:
+	$(CPPCHECK)
+	
 # Call `make run` to run the application
 run:
 	./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
