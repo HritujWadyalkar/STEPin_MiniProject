@@ -36,4 +36,4 @@ Folder                      | Description
 | Countdown timer structure errors | Declaraing typedef structure in custom header file |
 | Structure pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
 | Stack smashing detected  | Assign value for structure variable in test function file  (bubble sort)                     |
-| Aborted (core dumped) in workflow |                                                     |
+| Aborted (core dumped) in workflow |  Changes to bubblesort function rectified (avoid going outside alloted stack)                                                  |
