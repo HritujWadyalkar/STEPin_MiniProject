@@ -2,7 +2,7 @@
 
 Build | Code Quality | Unity | Git Inspector
 |---------|------------|-----------|----------------
-|         |            |           |
+|[![C/C++ CI - Build Status](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/c-cpp.yml)         |[![Static Code- Cppcheck](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/cppcheck.yml)            |           |
 
 ## Introduction:-
 
