@@ -8,10 +8,6 @@ CC= gcc
 
 CFLAGS= -o
 
-# Output directory
-BUILD= build
-
-
 MAIN=main.c
 
 # All source code files
@@ -43,8 +39,6 @@ ifdef OS
    EXEC = exe
 else
    ifeq ($(shell uname), Linux)
-      CPPCHECK=cppcheck --enable=all $(SRC)	$(MAIN)
-	  VALGRIND=valgrind ./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
       RM = rm -rf
       FixPath = $1
 	  EXEC = out
@@ -60,39 +54,36 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 #Run make call to invoke cppcheck and compliation
-all: $(BUILD)
-	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC)) 
-	
-#Run the target to find the memory leak in the program	
-memoryleak:
-	$(VALGRIND)
-
-#Run the target to find static code analysis in the program
-static:
-	$(CPPCHECK)
+all: 
+	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(PROJECT_NAME).$(EXEC)) 
 
 # Call `make run` to run the application
 run:
-	./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
+	./$(call FixPath,$(PROJECT_NAME).$(EXEC))
+
+	
+#Run the target to find the memory leak in the program	
+memoryleak:$(test)
+	valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))
+
+#Run the target to find static code analysis in the program
+static:
+	cppcheck --enable=all $(SRC)	$(MAIN)
 
 # Build and run the unit tests
-test:$(BUILD)
-	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
-	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))	
+test:
+	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_NAME).$(EXEC))	
 
 #To test the coverage of the whole program
-coverage:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
-	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
+coverage:
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_NAME).$(EXEC))
 	gcov -a $(COV_SRC)
 	$(RM) *.$(EXEC) *.gcda *.gcno *.c.gcov
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	$(RM) $(call FixPath,$(BUILD)/*)
+	$(RM) $(call FixPath,*.$(EXEC))
 	$(RM) *.gcda *.gcno
-	rmdir $(BUILD)
-
-# Create new build folder if not present
-$(BUILD):
-	mkdir $(BUILD)	
+	
