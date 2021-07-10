@@ -16,6 +16,7 @@ error_t finddaysleft(event *e, int *numberoftasks, int *currentmonth, int *curre
         return NULL_ERROR;
     int parser;
     int monthDays[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
     //Leap year
     if ((*currentyear % 4 == 0 && *currentyear % 100 != 0) || (*currentyear % 400 == 0))
     {

@@ -20,14 +20,9 @@ error_t countdownTimer(timer *t)
     printf("\n");
     while (1)
     {
-        //print time in HH : MM : SS format
         printf("\r%02d : %02d ", t->minute, t->second);
-        //clear output buffer in gcc
         fflush(stdout);
-        //increase second
         t->second = t->second - 1;
-
-        //update hour, minute and second
         if (t->second == -1)
         {
             t->minute = t->minute - 1;
@@ -39,7 +34,6 @@ error_t countdownTimer(timer *t)
             printf("\n\n---------Time's up--------\n");
             break;
         }
-
         sleep(1);
     }
     return SUCCESS;

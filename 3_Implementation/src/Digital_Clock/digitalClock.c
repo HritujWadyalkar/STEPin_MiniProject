@@ -15,19 +15,13 @@ error_t digitalClock()
 {
     time_t seconds;
     struct tm *current_time;
-
-    // time in seconds
     seconds = time(NULL);
-
-    // to get current time
     current_time = localtime(&seconds);
     printf("\n");
     int cooldown = 10;
     while (cooldown--)
     {
-        //increase second
         current_time->tm_sec++;
-        //update hour, minute and second
         if (current_time->tm_sec == 60)
         {
             current_time->tm_min += 1;
@@ -44,11 +38,6 @@ error_t digitalClock()
             current_time->tm_min = 0;
             current_time->tm_sec = 0;
         }
-
-        // print time in minutes,
-        // hours and seconds
-
-        // print time in minutes,
 
         printf("\r%02d:%02d:%02d",
                current_time->tm_hour,
