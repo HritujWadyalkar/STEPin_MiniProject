@@ -22,7 +22,7 @@ int main()
     error_t (*funptr6)(event *, int *) = printevent;
     int choice;
 revisit:
-    printf("\n******************************\n");
+    printf("\n\n******************************\n");
     printf("1.Digital Clock\n");
     printf("2.Countdown Timer\n");
     printf("3.Event Scheduler\n");

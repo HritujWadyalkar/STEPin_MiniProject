@@ -50,7 +50,7 @@ error_t digitalClock()
 
         // print time in minutes,
 
-        printf("\r%02d:%02d:%02d\n",
+        printf("\r%02d:%02d:%02d",
                current_time->tm_hour,
                current_time->tm_min,
                current_time->tm_sec);

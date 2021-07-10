@@ -62,6 +62,10 @@ run:
 	./$(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 	
+# Build and run the unit tests
+test:
+	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_NAME).$(EXEC))	
 #Run the target to find the memory leak in the program	
 memoryleak:$(test)
 	valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))
@@ -70,10 +74,7 @@ memoryleak:$(test)
 static:
 	cppcheck --enable=all $(SRC)	$(MAIN)
 
-# Build and run the unit tests
-test:
-	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_NAME).$(EXEC))	
+
 
 #To test the coverage of the whole program
 coverage:
