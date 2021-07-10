@@ -14,8 +14,13 @@
 
 int main()
 {
+    error_t (*funptr1)() = digitalClock;
+    error_t (*funptr2)(timer *) = countdownTimer;
+    error_t (*funptr3)(int *, int *, int *) = getcurrentdate;
+    error_t (*funptr4)(event *, int *, int *, int *, int *) = finddaysleft;
+    error_t (*funptr5)(event *, int *) = bubblesort;
+    error_t (*funptr6)(event *, int *) = printevent;
     int choice;
-
 revisit:
     printf("\n******************************\n");
     printf("1.Digital Clock\n");
@@ -30,7 +35,7 @@ revisit:
     case 1:
     {
         printf("\n-Digital Clock-");
-        digitalClock();
+        error_t function = (*funptr1)();
         goto revisit;
     }
     case 2:
@@ -42,7 +47,7 @@ revisit:
         scanf("%d", &t->minute);
         printf("Enter the seconds (maximum: 60 sec) = ");
         scanf("%d", &t->second);
-        countdownTimer(t);
+        error_t function = (*funptr2)(t);
         free(t);
         goto revisit;
     }
@@ -50,8 +55,8 @@ revisit:
     {
         printf("\n-Event Scheduler-");
         event *e;
-        int currentDay, currentmonth, currentyear;
-        getcurrentdate(&currentDay, &currentmonth, &currentyear);
+        int currentDay = 0, currentmonth = 0, currentyear = 0;
+        error_t function1 = (*funptr3)(&currentDay, &currentmonth, &currentyear);
         int i, numberoftasks;
         printf("\nEnter number of tasks: ");
         scanf("%d", &numberoftasks);
@@ -65,9 +70,9 @@ revisit:
             printf("Enter event message:\n");
             scanf("%100[^\n]", e[i].message);
         }
-        finddaysleft(e, &numberoftasks, &currentmonth, &currentDay, &currentyear);
-        bubblesort(e, &numberoftasks);
-        printevent(e, &numberoftasks);
+        error_t function2 = (*funptr4)(e, &numberoftasks, &currentmonth, &currentDay, &currentyear);
+        error_t function3 = (*funptr5)(e, &numberoftasks);
+        error_t function4 = (*funptr6)(e, &numberoftasks);
         free(e);
         goto revisit;
     }
