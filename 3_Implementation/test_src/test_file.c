@@ -38,7 +38,7 @@ void testgetcurrentdate(void)
 void testbubblesort(void)
 {
     int numberoftasks = 2;
-    event e1;
+    event e1 = {"Hello", 22, 9, 2021, 40};
     TEST_ASSERT_EQUAL(SUCCESS, bubblesort(&e1, &numberoftasks));
     TEST_ASSERT_EQUAL(NULL_ERROR, bubblesort(NULL, &numberoftasks));
     TEST_ASSERT_EQUAL(NULL_ERROR, bubblesort(&e1, NULL));

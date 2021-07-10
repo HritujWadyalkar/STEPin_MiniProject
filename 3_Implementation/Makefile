@@ -39,7 +39,7 @@ ifdef OS
    EXEC = exe
 else
    ifeq ($(shell uname), Linux)
-      CPPCHECK=cppcheck --enable=all $(SRC)	
+      CPPCHECK=cppcheck --enable=all $(SRC)	$(MAIN)
 	  VALGRIND=valgrind ./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
       RM = rm -rf
       FixPath = $1
@@ -54,13 +54,18 @@ $(PROJECT_NAME):all
 # Run the target even if the matching name exists
 .PHONY: run clean test doc all
 
+#Run make call to invoke cppcheck and compliation
 all: $(BUILD)
 	$(CPPCHECK)
-	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
+	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC)) -fno-stack-protector
+	
+#Run the target to find the memory leak in the program	
+memoryleak:
 	$(VALGRIND)
 
+
 # Call `make run` to run the application
-run:all
+run:
 	./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
 
 # Build and run the unit tests
@@ -68,6 +73,7 @@ test:$(SRC) $(TEST)
 	gcc $^ $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))	
 
+#To test the coverage of the whole program
 coverage:$(BUILD)
 	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))

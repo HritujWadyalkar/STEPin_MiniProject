@@ -1,3 +1,14 @@
+/**
+ * @file digitalClock.c
+ * @author Athul Thomas (thomasathul@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-07-10
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "prototypes.h"
 
 error_t digitalClock()
@@ -39,7 +50,7 @@ error_t digitalClock()
 
         // print time in minutes,
 
-        printf("\r%02d:%02d:%02d",
+        printf("\r%02d:%02d:%02d\n",
                current_time->tm_hour,
                current_time->tm_min,
                current_time->tm_sec);
