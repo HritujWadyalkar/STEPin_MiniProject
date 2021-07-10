@@ -66,6 +66,8 @@ run:
 test:
 	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(TEST_NAME).$(EXEC))	
+
+	
 #Run the target to find the memory leak in the program	
 memoryleak:$(test)
 	valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))

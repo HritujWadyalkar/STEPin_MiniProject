@@ -14,16 +14,19 @@ error_t bubblesort(event *e, int *numberoftasks)
 {
     if (NULL == e || NULL == numberoftasks)
         return NULL_ERROR;
-    temp t;
-    for (int i = 0; i < *numberoftasks - 1; i++)
-        for (int j = 0; j < *numberoftasks - i - 1; j++)
+    int parser1, parser2;
+    event temp;
+    for (parser1 = 0; parser1 < (*numberoftasks - 1); parser1++)
+    {
+        for (parser2 = 1; parser2 < (*numberoftasks - 1 - parser1); parser2++)
         {
-            if (e[j].dayleft > e[j + 1].dayleft)
+            if (e[parser2].dayleft < e[parser2 - 1].dayleft)
             {
-                t = e[j];
-                e[j] = e[j + 1];
-                e[j + 1] = t;
+                temp = e[parser2];
+                e[parser2] = e[parser2 - 1];
+                e[parser2 - 1] = temp;
             }
         }
+    }
     return SUCCESS;
 }
