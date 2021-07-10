@@ -33,6 +33,8 @@ unity/unity.c
 INC=-I inc\
 -I unity
 
+#SOurce file for coverage test
+COV_SRC=test_src/test_file.c
 
 #Multiplatform features
 ifdef OS
@@ -82,6 +84,8 @@ test:$(BUILD)
 coverage:$(BUILD)
 	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
+	gcov -a $(COV_SRC)
+	$(RM) *.$(EXEC) *.gcda *.gcno *.c.gcov
 
 # Remove all the built files, invoke by `make clean`
 clean:
