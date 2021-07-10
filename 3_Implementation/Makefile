@@ -33,6 +33,8 @@ unity/unity.c
 INC=-I inc\
 -I unity
 
+
+#Multiplatform features
 ifdef OS
    RM = del /q
    FixPath = $(subst /,\,$1)
@@ -40,7 +42,7 @@ ifdef OS
 else
    ifeq ($(shell uname), Linux)
       CPPCHECK=cppcheck --enable=all $(SRC)	$(MAIN)
-	  VALGRIND=valgrind ./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
+	  VALGRIND=valgrind ./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
       RM = rm -rf
       FixPath = $1
 	  EXEC = out
@@ -51,12 +53,13 @@ endif
 # Default target built
 $(PROJECT_NAME):all
 
+
 # Run the target even if the matching name exists
 .PHONY: run clean test doc all
 
 #Run make call to invoke cppcheck and compliation
 all: $(BUILD)
-	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC)) -fno-stack-protector
+	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC)) 
 	
 #Run the target to find the memory leak in the program	
 memoryleak:
@@ -65,14 +68,14 @@ memoryleak:
 #Run the target to find static code analysis in the program
 static:
 	$(CPPCHECK)
-	
+
 # Call `make run` to run the application
 run:
 	./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
 
 # Build and run the unit tests
-test:$(SRC) $(TEST)
-	gcc $^ $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
+test:$(BUILD)
+	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))	
 
 #To test the coverage of the whole program
