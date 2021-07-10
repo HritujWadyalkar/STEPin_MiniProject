@@ -8,8 +8,8 @@ Reaching your office/school on time, Not being late for the movies, Waking up on
 ## Research
 
 ### Cost and Features:-
-
-The clock app provides multiple features such as Live digital clock, Event reminder and a countdown timer. The user can choose any menu options and the feature will be displayed.
+ IBM Simon released in 1994 is considered to be the first smartphone to have multifunctional qualities like clock, calendar, email, notepad, address book etc. 
+The multifunctional clock app in this project provides multiple features such as Live digital clock, Event Scheduler and a countdown timer. The user can choose any menu options and the feature will be displayed.
 |Features | Properties |
 |---------------- | -------------- |
 |Live digital clock | It displays the current time of your region. |
