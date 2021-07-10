@@ -85,6 +85,10 @@ coverage:
 	gcov -a $(COV_SRC)
 	$(RM) *.$(EXEC) *.gcda *.gcno *.c.gcov
 
+#To document the program
+doc:
+	make -C doc
+
 # Remove all the built files, invoke by `make clean`
 clean:
 	$(RM) $(call FixPath,*.$(EXEC))
