@@ -1,6 +1,6 @@
 
 
-name: Static Code- Cppcheck
+name: Static Code Analysis- Cppcheck
 
 
 on:
