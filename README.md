@@ -48,4 +48,4 @@ Folder                      | Description
 | Structure pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
 | Stack smashing detected  | Assign value for structure variable in test function file  (bubble sort)                     |
 | Aborted (core dumped) in workflow |  Changes to bubblesort function rectified (avoid going outside alloted stack)                                                  |
-| Doxygen documentation from doxyfile returns an empty html file |                                           |
+| Documentation from doxyfile returns an empty html file |                                           |
