@@ -16,7 +16,7 @@ Build | Code Quality | Unity | Git Inspector |
 ![Home Screen](/6_ImagesandVideos/homescreen.gif)
 
 ## Want to try it yourself? 
-Head to the Implementation page to learn more about [Getting Started](3_Implementation/README.md) with your multifunctional clock.
+Head to the Implementation page to learn more about [Getting started](3_Implementation/README.md) with your multifunctional clock.
 
 
 ## Folder Structure
