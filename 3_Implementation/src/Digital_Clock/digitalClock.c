@@ -10,7 +10,6 @@
  */
 
 #include "prototypes.h"
-
 error_t digitalClock()
 {
     time_t seconds;
