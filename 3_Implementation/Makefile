@@ -8,7 +8,6 @@ CC= gcc
 
 CFLAGS= -o
 
-BUILD =build
 
 MAIN=main.c
 
@@ -43,7 +42,7 @@ else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
 	  CPPCHECK=cppcheck --enable=all $(SRC) $(MAIN)
-	  VALGRIND=valgrind ./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
+	  VALGRIND=valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))
       FixPath = $1
 	  EXEC = out
    endif
@@ -58,23 +57,23 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 #Run make call to invoke cppcheck and compliation
-all:$(BUILD) 
-	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC)) 
+all: 
+	$(CC) $(MAIN) $(SRC) $(INC) $(CFLAGS) $(call FixPath,$(PROJECT_NAME).$(EXEC)) 
 
 # Call `make run` to run the application
 run:
-	./$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
+	./$(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 	
 # Build and run the unit tests
-test:$(BUILD)
-	$(CC) $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
-	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))	
+test:
+	$(CC) $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_NAME).$(EXEC))	
 
 	
 #Run the target to find the memory leak in the program	
 memoryleak:
-	$(CC) $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
+	$(CC) $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
 	$(VALGRIND)
 	
 
@@ -86,8 +85,8 @@ static:
 
 #To test the coverage of the whole program
 coverage:
-	$(CC) -fprofile-arcs -ftest-coverage $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
-	./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
+	$(CC) -fprofile-arcs -ftest-coverage $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_NAME).$(EXEC))
 	gcov -a $(COV_SRC)
 
 #To document the program
@@ -96,10 +95,7 @@ doc:
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	$(RM) $(BUILD)
+	$(RM) *.$(EXEC)
 	$(RM) *.gcda *.gcno
-
-$(BUILD): 
-	mkdir build
 
 	
