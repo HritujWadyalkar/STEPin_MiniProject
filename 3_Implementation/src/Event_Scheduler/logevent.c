@@ -29,7 +29,7 @@ error_t logevent(event *e, int *numberoftasks)
         }
         else
         {
-            fprintf(filepointer, "Event: %s \t\t(Event done)\n", e[parser].message);
+            fprintf(filepointer, "%d/%d\t-   Event: %s \t\t(Event done)\n", e[parser].date, e[parser].month, e[parser].message);
         }
     }
     fclose(filepointer);

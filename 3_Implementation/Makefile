@@ -40,6 +40,8 @@ ifdef OS
 else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
+	  CPPCHECK=cppcheck --enable=all $(SRC) $(MAIN)
+	  VALGRIND=valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))
       FixPath = $1
 	  EXEC = out
    endif
@@ -64,23 +66,25 @@ run:
 	
 # Build and run the unit tests
 test:
-	gcc $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	$(CC) $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(TEST_NAME).$(EXEC))	
 
 	
 #Run the target to find the memory leak in the program	
-memoryleak:$(test)
-	valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))
+memoryleak:
+	$(CC) $(INC) $(SRC) $(TEST) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	$(VALGRIND)
+	
 
 #Run the target to find static code analysis in the program
 static:
-	cppcheck --enable=all $(SRC)	$(MAIN)
+	$(CPPCHECK)
 
 
 
 #To test the coverage of the whole program
 coverage:
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
+	$(CC) -fprofile-arcs -ftest-coverage $(SRC) $(TEST) $(INC) $(CFLAGS) $(call FixPath,$(TEST_NAME).$(EXEC))
 	./$(call FixPath,$(TEST_NAME).$(EXEC))
 	gcov -a $(COV_SRC)
 	$(RM) *.$(EXEC) *.gcda *.gcno *.c.gcov

@@ -12,6 +12,7 @@
 #include "prototypes.h"
 error_t printevent(event *e, int *numberoftasks)
 {
+    error_t (*subfunptr1)(event *, int *) = logevent;
     if (NULL == e || NULL == numberoftasks)
         return NULL_ERROR;
     int parser;
@@ -27,6 +28,6 @@ error_t printevent(event *e, int *numberoftasks)
             printf("Event: %s \t(Event done)\n", e[parser].message);
         }
     }
-    logevent(e, numberoftasks);
+    (*subfunptr1)(e, numberoftasks);
     return SUCCESS;
 }

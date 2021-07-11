@@ -1,3 +1,1 @@
-12/7	-   Event: Exam  		(Deadline= 2 days)
-21/10	-   Event: Bake  		(Deadline= 103 days)
-25/12	-   Event: Christmas  		(Deadline= 168 days)
+22/8	-   Event: Hello  		(Deadline= 30 days)

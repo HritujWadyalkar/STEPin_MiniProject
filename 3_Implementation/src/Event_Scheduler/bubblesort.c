@@ -16,9 +16,9 @@ error_t bubblesort(event *e, int *numberoftasks)
         return NULL_ERROR;
     int parser1, parser2;
     event temp;
-    for (parser1 = 0; parser1 < (*numberoftasks - 1); parser1++)
+    for (parser1 = 0; parser1 <= (*numberoftasks - 1); parser1++)
     {
-        for (parser2 = 1; parser2 < (*numberoftasks - 1 - parser1); parser2++)
+        for (parser2 = 1; parser2 <= (*numberoftasks - 1 - parser1); parser2++)
         {
             if (e[parser2].dayleft < e[parser2 - 1].dayleft)
             {
