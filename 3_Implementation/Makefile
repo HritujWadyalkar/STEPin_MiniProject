@@ -43,7 +43,7 @@ else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
 	  CPPCHECK=cppcheck --enable=all $(SRC) $(MAIN)
-	  VALGRIND=valgrind ./$(call FixPath,$(TEST_NAME).$(EXEC))
+	  VALGRIND=valgrind ./$(call FixPath,$(BUILD)/$(TEST_NAME).$(EXEC))
       FixPath = $1
 	  EXEC = out
    endif
