@@ -33,7 +33,7 @@ Folder                      | Description
 ## Contributors List and Summary
 | SF_ID | Name | Features |Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
 |-----|-----|----|------|-----|-----|-----|
-| 303612 | Athul Thomas |F_01, F_02, F_03  | 1  | 1 | 8 | 8 |
+| 303612 | Athul Thomas |F_01, F_02, F_03  | 2  | 1 | 8 | 8 |
 
 |Features list|  Feature ID|
 |-------------|----------|
@@ -48,3 +48,4 @@ Folder                      | Description
 | Structure pointer exit after one value is entered | Dynamic memory allocation (using malloc) |
 | Stack smashing detected  | Assign value for structure variable in test function file  (bubble sort)                     |
 | Aborted (core dumped) in workflow |  Changes to bubblesort function rectified (avoid going outside alloted stack)                                                  |
+| Documentation from doxyfile returns an empty html file |                                           |
