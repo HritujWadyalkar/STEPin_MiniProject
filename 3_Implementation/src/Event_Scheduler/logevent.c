@@ -16,7 +16,7 @@ error_t logevent(event *e, int *numberoftasks)
         return NULL_ERROR;
     int parser;
     FILE *filepointer;
-    filepointer = fopen("log.txt", "w");
+    filepointer = fopen("../3_Implementation/log/log.txt", "w");
     if (filepointer == NULL)
     {
         return FILE_NOT_FOUND;
