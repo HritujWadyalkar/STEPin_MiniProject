@@ -10,15 +10,15 @@
 
 ## Low level test plan
 
-| **Test ID** | **Description**    | **Exp I/P**      | **Exp O/P**      | **Actual O/P**   | **Type Of Test** |
-| ----------- | ----------------- | ----------------------- | ---------------- | ---------------- | ---------------- | 
-| LR01        | To test if the digital clock is displayed and shows the current time  | time_t s, struct current_time, int cooldown           | SUCCESS          | SUCCESS          | Technical        |
+| **Test ID** | **Description**                                                                         | **Exp I/P**                                                                  | **Exp O/P**      | **Actual O/P**   | **Type Of Test** |
+| ----------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------- | ---------------- | ---------------- |
+| LR01        | To test if the digital clock is displayed and shows the current time                    | time_t s, struct current_time, int cooldown                                  | SUCCESS          | SUCCESS          | Technical        |
 | LR02        | To test if we can get the correct current dates                                         | int currentmonth, int currentDay,int currentyear                             | SUCCESS          | SUCCESS          | Technical        |
 | LR03        | To test if it finds the number of days left                                             | event \*, int numberoftasks, int currentmonth,int currentDay,int currentyear | SUCCESS          | SUCCESS          | Technical        |
 | LR04        | To test if the event pointer and numberoftasks pointer is NULL in finddaysleft function | event \*, int numberoftasks, int currentmonth,int currentDay,int currentyear | NULL_ERROR       | NULL_ERROR       | Technical        |
-| LR05        | To test the program finds sorted event using bubblesort      | event \*, int numberoftasks                                                  | SUCCESS                   | SUCCESS          | Technical |
-| LR06        | To test if the event pointer and numberoftasks is NULL in bubblesort function           | event \*, int numberoftasks                                                  | NULL_ERROR       |    NULL_ERROR       | Technical |
-| LR07        | To test the program if the event are printed on screen                                  | event \*, int numberoftasks                                                  | SUCCESS          |     SUCCESS          | Technical |
+| LR05        | To test the program finds sorted event using bubblesort                                 | event \*, int numberoftasks                                                  | SUCCESS          | SUCCESS          | Technical        |
+| LR06        | To test if the event pointer and numberoftasks is NULL in bubblesort function           | event \*, int numberoftasks                                                  | NULL_ERROR       | NULL_ERROR       | Technical        |
+| LR07        | To test the program if the event are printed on screen                                  | event \*, int numberoftasks                                                  | SUCCESS          | SUCCESS          | Technical        |
 | LR08        | To test if the pointers passed to printevent is NULL                                    | event \*, int numberoftasks                                                  | NULL_ERROR       | NULL_ERROR       | Technical        |
 | LR09        | To test the program if the event are logged into a text file                            | event \*, int numberoftasks                                                  | SUCCESS          | SUCCESS          | Technical        |
 | LR10        | To test if the pointers passed to logevent is NULL                                      | event \*, int numberoftasks                                                  | NULL_ERROR       | NULL_ERROR       | Technical        |
