@@ -31,7 +31,7 @@ sudo apt-get install cmake
 1. Once you have downloaded the dependencies required, clone this github repository.
 2. Next, Open up the terminal console and run the `make` command in the terminal.
 
-    The program is now compiled and ready to run! :tada:
+   The program is now compiled and ready to run! :tada:
 
 3. You can run the program in two ways:-
 
