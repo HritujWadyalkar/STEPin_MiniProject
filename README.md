@@ -33,7 +33,7 @@ Folder                      | Description
 ## Contributors List and Summary
 | SF_ID | Name | Features |Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
 |-----|-----|----|------|-----|-----|-----|
-| 303612 | Athul Thomas |F_01, F_02, F_03  | 1  | 1 | 8 | 8 |
+| 303612 | Athul Thomas |F_01, F_02, F_03  | 2  | 1 | 8 | 8 |
 
 |Features list|  Feature ID|
 |-------------|----------|
