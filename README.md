@@ -1,8 +1,8 @@
 # MiniProject_ClockApp
 
-Build | Code Quality | Unity | Git Inspector|
-|---------|------------|-----------|----------------|
-|[![C/C++ CI - Build Status](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/c-cpp.yml)         |[![Static Code- Cppcheck](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/cppcheck.yml)   [![Dynamic Code Analysis - Valgrind](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/valgrind.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/valgrind.yml) <br /> ![Code Quality Score](https://www.code-inspector.com/project/24710/score/svg) ![Code Grade](https://www.code-inspector.com/project/24710/status/svg) [![Code Coverage](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/coverage.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/coverage.yml)   [![Codacy Badge](https://app.codacy.com/project/badge/Grade/03f90b4decf241dfa7fa763571153df1)](https://www.codacy.com/gh/thomasathul/STEPin_MiniProject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=thomasathul/STEPin_MiniProject&amp;utm_campaign=Badge_Grade)    | [![Unit Testing](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/unity.yml)          |[![Contribution Check - Git Inspector](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/gitinspector.yml)        |
+Build | Code Quality | Unity | Git Inspector |
+|---------|------------|-----------|---------|
+|[![C/C++ CI - Build Status](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/c-cpp.yml)         |[![Static Code- Cppcheck](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/cppcheck.yml)   [![Dynamic Code Analysis - Valgrind](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/valgrind.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/valgrind.yml)  [![Code Coverage](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/coverage.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/coverage.yml) <br /> ![Code Quality Score](https://www.code-inspector.com/project/24710/score/svg)    [![Codacy Badge](https://app.codacy.com/project/badge/Grade/03f90b4decf241dfa7fa763571153df1)](https://www.codacy.com/gh/thomasathul/STEPin_MiniProject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=thomasathul/STEPin_MiniProject&amp;utm_campaign=Badge_Grade)    | [![Unit Testing](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/unity.yml)          | [![Contribution Check - Git Inspector](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/thomasathul/STEPin_MiniProject/actions/workflows/gitinspector.yml)        |     
 
 ## Introduction:-
 
@@ -22,7 +22,7 @@ Folder                      | Description
 ## Contributors List and Summary
 | SF_ID | Name | Features |Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
 |-----|-----|----|------|-----|-----|-----|
-| 303612 | Athul Thomas |F_01, F_02, F_03  |   |  | 8 | 8 |
+| 303612 | Athul Thomas |F_01, F_02, F_03  | 1  | 1 | 8 | 8 |
 
 |Features list|  Feature ID|
 |-------------|----------|
