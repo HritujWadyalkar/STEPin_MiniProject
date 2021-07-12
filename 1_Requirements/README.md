@@ -52,14 +52,14 @@ The multifunctional clock app in this project provides multiple features such as
 
 | ID   | Description                                                 | Category  | Status |
 | ---- | ----------------------------------------------------------- | --------- | ------ |
-| HR01 | User can view the startup menu screen                       | Technical | TBD    |
-| HR02 | User can choose between three features from the menu screen | Technical | TBD    |
-| HR03 | System displays the digital clock                           | Technical | TBD    |
-| HR04 | System displays the event scheduler                         | Technical | TBD    |
-| HR05 | System displays the countdown timer                         | Technical | TBD    |
-| HR06 | User can add an event                                       | Technical | TBD    |
-| HR07 | User can set the time for the timer                         | Technical | TBD    |
-| HR08 | Data should be stored while closing system (Event Scheduler) | Scenario  | TBD    |
+| HR01 | View the startup menu screen                                | Technical | IMPLEMENTED    |
+| HR02 | Choose between three features from the menu screen          | Technical | IMPLEMENTED    |
+| HR03 | System displays the digital clock                           | Technical | IMPLEMENTED    |
+| HR04 | System displays the event scheduler                         | Technical | IMPLEMENTED    |
+| HR05 | System displays the countdown timer                         | Technical | IMPLEMENTED    |
+| HR06 | Add an event                                                | Technical | IMPLEMENTED    |
+| HR07 | Set the time for the timer                                  | Technical | IMPLEMENTED    |
+| HR08 | Data should be stored while closing system                  | Scenario  | IMPLEMENTED    |
 
 ### Low level Requirements:-
 
