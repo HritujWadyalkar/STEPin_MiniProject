@@ -1,5 +1,16 @@
 # Getting Started with Clock App
 
+## Folder Structure
+
+|Folder |  Description|
+|-------|-------------|
+| doc   | Contains the doxyfile for documentation|
+| inc   | Contains all the header files|
+| log   | Contains log text file for event scheduler|
+| src   | Contains all the source files |
+| test_src| Contains the test files|
+| unity| Contains the unity framework for unit testing|
+
 ## Installing the dependencies
 
 To run the program, you would require two additional dependecies
