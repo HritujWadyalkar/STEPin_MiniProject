@@ -70,6 +70,8 @@ After you have run the program, you will be asked to enter the choice in the men
 
    ![Event Scheduler](/6_ImagesandVideos/eventscheduler.gif)
 
+![Click here](https://github.com/thomasathul/STEPin_MiniProject/blob/main/6_ImagesandVideos/README.md) to watch the project demo video. 
+
 ## Advanced Guide
 
 To verify and check more about the sources and testing, run the following commands:-
