@@ -15,7 +15,7 @@
 
 To run the program, you would require two additional dependecies
 
-1.  GCC compiler
+1. GCC compiler
 
 - For Windows users,
   Install [Mingw64](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download) and add the path to your environment variable.
@@ -27,7 +27,7 @@ To run the program, you would require two additional dependecies
     sudo apt-get install build-essential
 ```
 
-1.  Make
+1. Make
 
 - For Windows users,
   Install make from [Make Installer](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=webwerks&download=)
@@ -68,16 +68,16 @@ After you have run the program, you will be asked to enter the choice in the men
 3. If you have selected option 3, enter the number of tasks and the events that you need to schedule. Check the **log.txt** in the
    project file to view the logged events.
 
-  ⚠️**Warning**: Enter the date and month in (DD MM) format
+⚠️**Warning**: Enter the date and month in (DD MM) format
 
-   ![Event Scheduler](/6_ImagesandVideos/eventscheduler.gif)
+![Event Scheduler](/6_ImagesandVideos/eventscheduler.gif)
 
 ## Advanced Guide
 
 To verify and check more about the sources and testing, run the following commands:-
 
--   `make test` - To verify and test the program.
--   `make static` - To run a static code analysis.
--   `make memoryleak` - To run a dynamic code analysis.
--   `make coverage` - To check the test coverage.
--   `make doc`- To generate a documentation report.
+- `make test` - To verify and test the program.
+- `make static` - To run a static code analysis.
+- `make memoryleak` - To run a dynamic code analysis.
+- `make coverage` - To check the test coverage.
+- `make doc`- To generate a documentation report.
