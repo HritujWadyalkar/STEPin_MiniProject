@@ -51,9 +51,9 @@ sudo apt-get install cmake
 
 4.  If you wish to remove all the compiled and build files, Use the `make clean` command
 
-   [Click here](https://github.com/thomasathul/STEPin_MiniProject/blob/main/6_ImagesandVideos/README.md) to watch the project demo video. 
+[Click here](https://github.com/thomasathul/STEPin_MiniProject/blob/main/6_ImagesandVideos/README.md) to watch the project demo video.
 
-## Feature Demo
+## About features
 
 After you have run the program, you will be asked to enter the choice in the menu screen.
 
