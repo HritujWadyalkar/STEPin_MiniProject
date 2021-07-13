@@ -51,6 +51,8 @@ sudo apt-get install cmake
 
 4.  If you wish to remove all the compiled and build files, Use the `make clean` command
 
+[Click here](https://github.com/thomasathul/STEPin_MiniProject/blob/main/6_ImagesandVideos/README.md) to watch the project demo video. 
+
 ## Feature Demo
 
 After you have run the program, you will be asked to enter the choice in the menu screen.
@@ -69,8 +71,6 @@ After you have run the program, you will be asked to enter the choice in the men
    ⚠️**Warning**: Enter the date and month in (DD MM) format
 
    ![Event Scheduler](/6_ImagesandVideos/eventscheduler.gif)
-
-![Click here](https://github.com/thomasathul/STEPin_MiniProject/blob/main/6_ImagesandVideos/README.md) to watch the project demo video. 
 
 ## Advanced Guide
 
