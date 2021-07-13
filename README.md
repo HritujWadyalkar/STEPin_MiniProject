@@ -15,7 +15,7 @@ Build | Code Quality | Unity | Git Inspector |
 
 ![Home Screen](/6_ImagesandVideos/homescreen.gif)
 
-## Want to try it yourself? 
+## How to run? 
 Head to the Implementation page to learn more about [Getting started](3_Implementation/README.md) with your clock app.
 
 
